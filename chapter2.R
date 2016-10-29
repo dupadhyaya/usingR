@@ -62,6 +62,14 @@ rep(1:6)
 x=0
 while(x< 5) { x = x + 1 ; print(x)}
 
+# Graph & Loop
+plot.new()
+oldpar <- par(mfrow = c(2, 4))
+for (i in 2:9) {
+  plot(austpop[, 1], log(austpop[, i]), xlab = "Year", ylab = names(austpop)[i],
+  pch = 16+i, ylim = c(0, 10))
+  }
+         
 
 # Vectors
 3:10
